@@ -1,0 +1,15 @@
+---
+import { Picture } from 'astro:assets';
+import myLogo from '../img/Logo.png'; 
+---
+
+<picture>
+    <source srcset="/src/assets/logo.png" type="image/png" />
+    <img
+      src="/CreativaCode/src/assets/Logo.png"
+      width="32"
+      decoding="async"
+      loading="lazy"
+      alt="Logo de CreativaCode"
+    />
+  </picture>
