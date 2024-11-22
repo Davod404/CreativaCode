@@ -8,9 +8,9 @@ import Card from '../components/card.astro'
 
 <Layout title="CreativaCode">
 	<div id="content" class="flex flex-col items-center">
-		<header class="w-full px-3 py-4 flex justify-between bg-accent bg-opacity-30">
+		<header class="w-full px-10 py-7 flex justify-between bg-accent bg-opacity-30">
 			<Logo />
-			<section class="flex items-center gap-3 text-sm font-bold">
+			<section class="flex items-center gap-10 text-background text-sm font-bold">
 				<a href="#">Servicios</a>
 				<a href="#">Portafolios</a>
 				<a href="#">Sobre nosotros</a>
@@ -18,11 +18,11 @@ import Card from '../components/card.astro'
 			</section>
 		</header>
 		<main class="w-full pt-2 flex flex-col justify-center bg-accent bg-opacity-30">
-			<section class="h-60vh px-3 flex flex-col items-center justify-center">
+			<section class="h-60vh mb-20 px-3 flex flex-col items-center justify-center">
 				<div class="my-4 flex flex-col items-center">
-					<h1 class="m-2 text-4xl font-black">Diseño UX/UI y Desarrollo Web</h1>
+					<h1 class="m-2 text-6xl font-black">Diseño UX/UI y Desarrollo Web</h1>
 
-					<p class="max-w-60ch m-1 text-center text-sm text-slate-700 font-bold">Creamos experiencias digitales excepcionales que impulsan al éxito de tu negocio.</p>
+					<p class="max-w-60ch m-1 text-center text-md text-background font-bold">Creamos experiencias digitales excepcionales que impulsan al éxito de tu negocio.</p>
 				</div>
 				<div class=" my-2 flex flex-row">
 					<Button>
@@ -33,7 +33,7 @@ import Card from '../components/card.astro'
 					</Button>
 				</div>
 			</section>
-			<section class="px-3 py-8 bg-accent flex flex-col items-center justify-center">
+			<section class="px-3 py-8 pb-20 bg-accent flex flex-col items-center justify-center">
 				<h2 class="my-3 text-4xl text-background font-extrabold">Nuestros Servicios</h2>
 				<section class="py-4 flex flex-wrap justify-evenly gap-6">
 						<Card>
@@ -55,9 +55,9 @@ import Card from '../components/card.astro'
 					</section>
 			</section>
 		</main>
-		<footer class="w-full bg-background px-3 py-2 flex items-center flex-col">
-			<h2 class="m-1 text-4xl font-extrabold">¿Listo para empezar?</h2>
-			<p class="my-3">Contáctanos hoy para discutir tu próximo proyecto y cómo podemos ayudarte a alcanzar tus objetivos digitales.</p>
+		<footer class="w-full bg-background px-3 py-6 flex items-center flex-col text-text">
+			<h2 class="mx-1 my-3 mt-10 text-4xl font-extrabold">¿Listo para empezar?</h2>
+			<p class="my-3 max-w-60ch">Contáctanos hoy para discutir tu próximo proyecto y cómo podemos ayudarte a alcanzar tus objetivos digitales.</p>
 			<Button>
 				<span class="m-1 px-4 py-2 rounded text-background font-bold bg-primary bg-opacity-95" slot="text">Nuestros Servicios</span>
 			</Button>
