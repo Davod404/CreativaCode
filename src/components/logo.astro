@@ -1,14 +1,15 @@
 ---
-
+import logo from '@/assets/logo.png'
 ---
 
-<picture class="bg-text rounded-full">
-    <source srcset="/src/assets/logo.png" type="image/png" />
+
+<picture class="bg-black rounded-full">
+    <source srcset={logo.src} type="image/png" />
     <img
-      src="/CreativaCode/src/assets/Logo.png"
-      width="50"
-      decoding="async"
-      loading="lazy"
-      alt="Logo de CreativaCode"
+        src={logo.src}
+        width="50"
+        decoding="async"
+        loading="lazy"
+        alt="Logo de CreativaCode"
     />
-  </picture>
+</picture>

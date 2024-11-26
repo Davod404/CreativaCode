@@ -1,9 +1,14 @@
 ---
+// componentes
 import Layout from '../layouts/Layout.astro';
 import Logo from '../components/logo.astro';
 import Button from '../components/button.astro'
 import Card from '../components/card.astro'
 
+// imagenes
+import design from '@/assets/design.svg'
+import dev from '@/assets/dev.svg'
+import responsive from '@/assets/responsive.svg'
 ---
 
 <Layout title="CreativaCode">
@@ -29,25 +34,25 @@ import Card from '../components/card.astro'
 						<span class="my-1 px-4 py-2 rounded text-background font-bold bg-primary bg-opacity-95" slot="text">Nuestros Servicios</span>
 					</Button>
 					<Button>
-						<span class="my-1 px-3 py-2 rounded text-text font-bold border-2 border-text" slot="text">Contactar</span>
+						<span class="my-1 px-3 py-2 rounded text-background font-bold border-2 border-background" slot="text">Contactar</span>
 					</Button>
 				</div>
 			</section>
 			<section class="px-3 py-8 pb-20 bg-accent flex flex-col items-center justify-center">
-				<h2 class="my-3 text-4xl text-background font-extrabold">Nuestros Servicios</h2>
+				<h2 class="my-3 text-5xl text-background font-extrabold">Nuestros Servicios</h2>
 				<section class="py-4 flex flex-wrap justify-evenly gap-6">
 						<Card>
-							<img src="/src/assets/dev.svg" alt="img-design" slot="icon">
+							<img src={design.src} alt="img-design" slot="icon">
 							<h3 class="text-background text-xl font-bold" slot="title">Diseño UX/UI</h3>
 							<p class="text-background text-sm font-semibold" slot="text">Creamos interfaces intuitivas y alternativas que mejoran la experiencia del usuario.</p>
 						</Card>
 						<Card>
-							<img src="/src/assets/design.svg" alt="img-dev" slot="icon">
+							<img src={dev.src} alt="img-dev" slot="icon">
 							<h3 class="text-background text-xl font-bold" slot="title">Desarrollo Web</h3>
 							<p class="text-background text-sm font-semibold" slot="text">Construimos sitios web y aplicaciones robustas y escalables con las ultimas tecnologías.</p>
 						</Card>
 						<Card>
-							<img src="/src/assets/responsive.svg" alt="img-phone" slot="icon">
+							<img src={responsive.src} alt="img-phone" slot="icon">
 							<h3 class="text-background text-xl font-bold" slot="title">Diseño Responsivo</h3>
 							<p class="text-background text-sm font-semibold" slot="text">Aseguramos que tu sitio se vea y funcione perfectamente en todos los dispositivos.</p>
 						</Card>
@@ -56,8 +61,8 @@ import Card from '../components/card.astro'
 			</section>
 		</main>
 		<footer class="w-full bg-background px-3 py-6 flex items-center flex-col text-text">
-			<h2 class="mx-1 my-3 mt-10 text-4xl font-extrabold">¿Listo para empezar?</h2>
-			<p class="my-3 max-w-60ch">Contáctanos hoy para discutir tu próximo proyecto y cómo podemos ayudarte a alcanzar tus objetivos digitales.</p>
+			<h2 class="mx-1 my-3 mt-10 text-5xl font-extrabold">¿Listo para empezar?</h2>
+			<p class="my-3 max-w-60ch text-xl">Contáctanos hoy para discutir tu próximo proyecto y cómo podemos ayudarte a alcanzar tus objetivos digitales.</p>
 			<Button>
 				<span class="m-1 px-4 py-2 rounded text-background font-bold bg-primary bg-opacity-95" slot="text">Nuestros Servicios</span>
 			</Button>
